@@ -1,0 +1,92 @@
+@import '../../lib/variables.scss';
+
+.modal {
+  width: 70%;
+  max-width: 300px;
+  padding: 20px;
+
+  position: fixed;
+  z-index: 2;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  border-radius: 10px;
+  background-color: $background-color;
+  box-shadow: $box-shadow;
+
+  &--background {
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    background-color: rgba(190, 190, 190, 0.486);
+  }
+
+  &__title {
+    margin: 0 0 20px 0;
+    color: $text-color;
+    font-family: $font-famaly-tittles;
+  }
+
+  &__close-icon {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    background: url('../../images/icons/close-svgrepo-com.svg');
+  }
+
+  &__input {
+    display: block;
+    width: 90%;
+    height: 25px;
+    margin-bottom: 15px;
+    padding-left: 5px;
+
+    border: none;
+    outline: none;
+    background-color: rgba(163, 145, 145, 0.315);
+    text-align: start;
+
+    &:last-of-type {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__label {
+    display: block;
+    text-align: start;
+    margin-bottom: 5px;
+  }
+
+  &__button {
+    width: 70%;
+    height: 30px;
+
+    font-family: $font-famaly-main;
+	  background-color: #7c8ceb;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+      background-color: #2EE59D;
+      box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+      color: #fff;
+      transform: translateY(-7px);
+    }
+  }
+}

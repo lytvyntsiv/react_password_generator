@@ -1,0 +1,23 @@
+@import '../../lib/variables.scss';
+
+.header{
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  min-height: 50px;
+
+  border-radius: 0 0 10px 10px;
+  background-color: $background-color;
+  box-shadow: $box-shadow;
+
+  &__title {
+    text-align: center;
+    align-self: center;
+    margin: 0;
+
+    color: $text-color;
+    font-family: $font-famaly-main;
+  }
+}

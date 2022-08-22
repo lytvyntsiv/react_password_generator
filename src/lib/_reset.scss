@@ -1,0 +1,28 @@
+body,
+ul,
+p,
+h1,
+h2 {
+  margin: 0;
+}
+
+ul,
+button {
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: 0;
+
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}

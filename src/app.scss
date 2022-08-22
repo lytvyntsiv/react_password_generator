@@ -1,0 +1,17 @@
+@import './lib/mixins';
+@import './lib/variables';
+
+.app {
+  width: 80%;
+  margin: auto;
+
+  &--show-modal {
+    background-color: #fff;
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
