@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkpassword_generator=self.webpackChunkpassword_generator||[]).push([[669],{669:function(e,r,a){a.r(r),a.d(r,{default:function(){return t}});a(791);var s=a(184),t=function(e){var r=e.tittle;return(0,s.jsx)("header",{className:"header",children:(0,s.jsx)("h1",{className:"header__title",children:r})})}}}]);
+//# sourceMappingURL=669.83a65f8a.chunk.js.map
