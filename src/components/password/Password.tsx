@@ -27,7 +27,7 @@ const Password: FC = () => {
 
   useEffect(() => {
     setShowPassword(!showPassword);
-  }, [password])
+  }, [password]);
 
   const generatePassword = (): string => {
     let charset: string = '';
@@ -55,12 +55,12 @@ const Password: FC = () => {
   }
 
   const regeneratePassword = (): void => {
-    dispatch({type: Action.UPDATE_PASSWORD, payload: generatePassword()})
+    dispatch({type: Action.COPY_PASSWORD, payload: false});
+    dispatch({type: Action.UPDATE_PASSWORD, payload: generatePassword()});
   }
 
   useEffect(() => {
     regeneratePassword();
-    dispatch({type: Action.COPY_PASSWORD, payload: false});
   }, [length, lowercase, uppercase, numbers, symboles, controled]);
 
   const updateDifficultyLine = (length: number) => {

@@ -16,7 +16,7 @@ const MainPage: FC = () => {
 
   return (
     <>
-      <Header tittle="Generate a secure password"/>
+      <Header tittle="Password Generator"/>
       <main className="page__main">
         <ComplexityVisual/>
         <Password/>
